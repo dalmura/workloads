@@ -5,4 +5,4 @@ namespace: externaldns
 
 resources:
   - namespace.yaml
-  - github.com/kubernetes-sigs/external-dns/kustomize?ref=v0.14.0
+  - github.com/kubernetes-sigs/external-dns/kustomize?ref=v0.15.1

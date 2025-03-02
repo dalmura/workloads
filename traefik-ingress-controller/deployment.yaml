@@ -15,7 +15,7 @@ spec:
       serviceAccountName: traefik-ingress-controller
       containers:
         - name: traefik
-          image: traefik:v2.11
+          image: ghcr.io/traefik/traefik:3.3.4
           args:
             - --api.insecure=true
             - --api.dashboard=true

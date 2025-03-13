@@ -4,13 +4,21 @@ metadata:
   name: traefik-ingress-controller
 rules:
   - apiGroups:
-    - ""
+      - ""
     resources:
       - services
-      - endpoints
       - secrets
+      - nodes
+      - endpoints
     verbs:
       - get
+      - list
+      - watch
+  - apiGroups:
+      - discovery.k8s.io
+    resources:
+      - endpointslices
+    verbs:
       - list
       - watch
   - apiGroups:
@@ -32,7 +40,6 @@ rules:
       - update
   - apiGroups:
       - traefik.io
-      - traefik.containo.us
     resources:
       - middlewares
       - middlewaretcps
@@ -43,6 +50,7 @@ rules:
       - tlsoptions
       - tlsstores
       - serverstransports
+      - serverstransporttcps
     verbs:
       - get
       - list

@@ -5,4 +5,5 @@ namespace: externaldns
 
 resources:
   - namespace.yaml
+  - https://raw.githubusercontent.com/kubernetes-sigs/external-dns/refs/heads/master/charts/external-dns/crds/dnsendpoint.yaml
   - github.com/kubernetes-sigs/external-dns/kustomize?ref=v0.15.1

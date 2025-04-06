@@ -7,5 +7,5 @@ spec:
     spec:
       containers:
         - name: keycloak-operator
-          readinessProbe:
+          startupProbe:
             initialDelaySeconds: 60

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: keycloak-operator
+spec:
+  template:
+    spec:
+      containers:
+        - $patch: merge
+          name: keycloak-operator
+          readinessProbe:
+            initialDelaySeconds: 60

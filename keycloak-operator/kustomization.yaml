@@ -8,5 +8,9 @@ resources:
   - https://raw.githubusercontent.com/keycloak/keycloak-k8s-resources/26.1.4/kubernetes/keycloakrealmimports.k8s.keycloak.org-v1.yml
   - https://raw.githubusercontent.com/keycloak/keycloak-k8s-resources/26.1.4/kubernetes/kubernetes.yml
 
-patchesStrategicMerge:
-  - deployment_override.yaml
+patches:
+  - path: deployment_override.yaml
+    target:
+      group: apps
+      kind: Deployment
+      name: keycloak-operator

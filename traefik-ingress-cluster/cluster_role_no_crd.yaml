@@ -10,6 +10,7 @@ rules:
       - secrets
       - nodes
       - endpoints
+      - configmaps
     verbs:
       - get
       - list

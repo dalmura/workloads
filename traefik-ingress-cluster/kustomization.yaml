@@ -3,7 +3,7 @@ kind: Kustomization
 
 # With CRDs
 resources:
-  - https://raw.githubusercontent.com/traefik/traefik/v3.3/docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml
+  - https://raw.githubusercontent.com/traefik/traefik/v3.5.1/docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml
   - cluster_role_with_crd.yaml
 
 # Without CRDs

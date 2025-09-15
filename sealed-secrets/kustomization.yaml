@@ -4,4 +4,4 @@ kind: Kustomization
 namespace: kube-system
 
 resources:
-  - https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.31.0/controller.yaml
+  - https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.32.2/controller.yaml
